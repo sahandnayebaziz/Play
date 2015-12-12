@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45F5441E53E602B0ADD94AD7 /* Pods_Play.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B876D56B30303BA7E34C9EC4 /* Pods_Play.framework */; };
 		D8717FAD1C1CA7A300BC1131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8717FAC1C1CA7A300BC1131 /* AppDelegate.swift */; };
 		D8717FAF1C1CA7A300BC1131 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8717FAE1C1CA7A300BC1131 /* ViewController.swift */; };
 		D8717FB21C1CA7A300BC1131 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8717FB01C1CA7A300BC1131 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		D8717FB71C1CA7A300BC1131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8717FB51C1CA7A300BC1131 /* LaunchScreen.storyboard */; };
 		D8717FC21C1CA7A300BC1131 /* PlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8717FC11C1CA7A300BC1131 /* PlayTests.swift */; };
 		D8717FCD1C1CA7A300BC1131 /* PlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8717FCC1C1CA7A300BC1131 /* PlayUITests.swift */; };
+		D8717FDB1C1CA85600BC1131 /* PSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8717FDA1C1CA85600BC1131 /* PSocket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		595BEA6872D78ADC7C0522F6 /* Pods-Play.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Play.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Play/Pods-Play.debug.xcconfig"; sourceTree = "<group>"; };
+		6BDCE190300B858B805EEFEC /* Pods-Play.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Play.release.xcconfig"; path = "Pods/Target Support Files/Pods-Play/Pods-Play.release.xcconfig"; sourceTree = "<group>"; };
+		B876D56B30303BA7E34C9EC4 /* Pods_Play.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Play.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8717FA91C1CA7A300BC1131 /* Play.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Play.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8717FAC1C1CA7A300BC1131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8717FAE1C1CA7A300BC1131 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		D8717FC81C1CA7A300BC1131 /* PlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8717FCC1C1CA7A300BC1131 /* PlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayUITests.swift; sourceTree = "<group>"; };
 		D8717FCE1C1CA7A300BC1131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8717FDA1C1CA85600BC1131 /* PSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSocket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F5441E53E602B0ADD94AD7 /* Pods_Play.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1499BC88FFDB568DB9BFB96E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B876D56B30303BA7E34C9EC4 /* Pods_Play.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B156A68FC18A3230F42E4BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				595BEA6872D78ADC7C0522F6 /* Pods-Play.debug.xcconfig */,
+				6BDCE190300B858B805EEFEC /* Pods-Play.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D8717FA01C1CA7A200BC1131 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +105,8 @@
 				D8717FC01C1CA7A300BC1131 /* PlayTests */,
 				D8717FCB1C1CA7A300BC1131 /* PlayUITests */,
 				D8717FAA1C1CA7A300BC1131 /* Products */,
+				6B156A68FC18A3230F42E4BC /* Pods */,
+				1499BC88FFDB568DB9BFB96E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +125,7 @@
 			children = (
 				D8717FAC1C1CA7A300BC1131 /* AppDelegate.swift */,
 				D8717FAE1C1CA7A300BC1131 /* ViewController.swift */,
+				D8717FDA1C1CA85600BC1131 /* PSocket.swift */,
 				D8717FB01C1CA7A300BC1131 /* Main.storyboard */,
 				D8717FB31C1CA7A300BC1131 /* Assets.xcassets */,
 				D8717FB51C1CA7A300BC1131 /* LaunchScreen.storyboard */,
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8717FD11C1CA7A300BC1131 /* Build configuration list for PBXNativeTarget "Play" */;
 			buildPhases = (
+				BEB1BC55B746578DEB006CC7 /* Check Pods Manifest.lock */,
 				D8717FA51C1CA7A300BC1131 /* Sources */,
 				D8717FA61C1CA7A300BC1131 /* Frameworks */,
 				D8717FA71C1CA7A300BC1131 /* Resources */,
+				4D1D4F644A507ABFFD5AFD44 /* Embed Pods Frameworks */,
+				C056C24C2DCA0235D1347189 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +223,7 @@
 				TargetAttributes = {
 					D8717FA81C1CA7A300BC1131 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 3WQTW95Z2J;
 					};
 					D8717FBC1C1CA7A300BC1131 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -251,12 +282,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D1D4F644A507ABFFD5AFD44 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Play/Pods-Play-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEB1BC55B746578DEB006CC7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C056C24C2DCA0235D1347189 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Play/Pods-Play-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D8717FA51C1CA7A300BC1131 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D8717FAF1C1CA7A300BC1131 /* ViewController.swift in Sources */,
+				D8717FDB1C1CA85600BC1131 /* PSocket.swift in Sources */,
 				D8717FAD1C1CA7A300BC1131 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,23 +477,29 @@
 		};
 		D8717FD21C1CA7A300BC1131 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 595BEA6872D78ADC7C0522F6 /* Pods-Play.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Play/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.sahand.Play;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		D8717FD31C1CA7A300BC1131 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BDCE190300B858B805EEFEC /* Pods-Play.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Play/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.sahand.Play;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -484,6 +570,7 @@
 				D8717FD31C1CA7A300BC1131 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8717FD41C1CA7A300BC1131 /* Build configuration list for PBXNativeTarget "PlayTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +579,7 @@
 				D8717FD61C1CA7A300BC1131 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8717FD71C1CA7A300BC1131 /* Build configuration list for PBXNativeTarget "PlayUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +588,7 @@
 				D8717FD91C1CA7A300BC1131 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
