@@ -15,3 +15,12 @@ enum PlayCodeTransportType: String {
 protocol PlayCodeTransportDelegate {
     func receiveCodeTransportPacket(header: PlayCodeTransportType, code: String)
 }
+
+enum PlayCodeDisplayModificationType: String {
+    case FontBigger, FontSmaller, FontReset
+}
+
+protocol PlayCodeDisplayModificationDelegate {
+    func receiveCodeDisplayModificationRequest(modifications: PlayCodeDisplayModificationType)
+}
+

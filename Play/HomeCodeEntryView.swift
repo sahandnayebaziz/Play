@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeCodeEntryView: UIView, UITextViewDelegate {
+class HomeCodeEntryView: UIView, UITextViewDelegate, PlayCodeDisplayModificationDelegate {
     
     private var entryView = UITextView()
     var delegate: PlayCodeTransportDelegate? = nil
@@ -47,11 +47,23 @@ class HomeCodeEntryView: UIView, UITextViewDelegate {
         delegate?.receiveCodeTransportPacket(PlayCodeTransportType.PreProcess, code: text)
     }
     
-    func textViewDidBeginEditing(textView: UITextView) {
-        print("detected start")
-        textView.inputAssistantItem.trailingBarButtonGroups = []
+    func receiveCodeDisplayModificationRequest(modification: PlayCodeDisplayModificationType) {
+        guard let currentFont = entryView.font else {
+            return
+        }
+        
+        switch modification {
+        case .FontBigger:
+            if currentFont.pointSize < 48 {
+                entryView.font = UIFont(name: currentFont.fontName, size: currentFont.pointSize + 1)
+            }
+        case .FontSmaller:
+            if currentFont.pointSize > 8 {
+                entryView.font = UIFont(name: currentFont.fontName, size: currentFont.pointSize - 1)
+            }
+        case .FontReset:
+            entryView.font = UIFont(name: currentFont.fontName, size: 18)
+        }
     }
-    
-    
 
 }

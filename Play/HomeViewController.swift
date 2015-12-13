@@ -31,7 +31,7 @@ class HomeViewController: UIViewController {
         let code = HomeCodeView()
         view.addSubview(code)
         code.snp_makeConstraints { make in
-            make.width.equalTo(view.snp_width).offset(-440)
+            make.width.equalTo(view.snp_width).offset(-390)
             make.centerX.equalTo(view.snp_centerX)
             make.top.equalTo(title.snp_bottom).offset(80)
             make.bottom.equalTo(view.snp_bottom).offset(-80)

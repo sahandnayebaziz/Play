@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		45F5441E53E602B0ADD94AD7 /* Pods_Play.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B876D56B30303BA7E34C9EC4 /* Pods_Play.framework */; };
+		D81F2ACA1C1D4A7D0071D96B /* HomeCodeEntryFontConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F2AC91C1D4A7D0071D96B /* HomeCodeEntryFontConfigurationView.swift */; };
 		D8717FAD1C1CA7A300BC1131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8717FAC1C1CA7A300BC1131 /* AppDelegate.swift */; };
 		D8717FB41C1CA7A300BC1131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8717FB31C1CA7A300BC1131 /* Assets.xcassets */; };
 		D8717FB71C1CA7A300BC1131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8717FB51C1CA7A300BC1131 /* LaunchScreen.storyboard */; };
@@ -44,6 +45,7 @@
 		595BEA6872D78ADC7C0522F6 /* Pods-Play.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Play.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Play/Pods-Play.debug.xcconfig"; sourceTree = "<group>"; };
 		6BDCE190300B858B805EEFEC /* Pods-Play.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Play.release.xcconfig"; path = "Pods/Target Support Files/Pods-Play/Pods-Play.release.xcconfig"; sourceTree = "<group>"; };
 		B876D56B30303BA7E34C9EC4 /* Pods_Play.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Play.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81F2AC91C1D4A7D0071D96B /* HomeCodeEntryFontConfigurationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCodeEntryFontConfigurationView.swift; sourceTree = "<group>"; };
 		D8717FA91C1CA7A300BC1131 /* Play.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Play.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8717FAC1C1CA7A300BC1131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8717FB31C1CA7A300BC1131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			children = (
 				D8A788EF1C1CFA0000044364 /* HomeCodeView.swift */,
 				D8A788F21C1CFA4900044364 /* HomeCodeEntryView.swift */,
+				D81F2AC91C1D4A7D0071D96B /* HomeCodeEntryFontConfigurationView.swift */,
 				D8A788F41C1CFE7100044364 /* HomeCodeResultsView.swift */,
 				D8A788F61C1D00BD00044364 /* Protocols.swift */,
 			);
@@ -400,6 +403,7 @@
 				D8A788F31C1CFA4900044364 /* HomeCodeEntryView.swift in Sources */,
 				D8A788EB1C1CF77F00044364 /* HomeTitleView.swift in Sources */,
 				D8717FDB1C1CA85600BC1131 /* PSocket.swift in Sources */,
+				D81F2ACA1C1D4A7D0071D96B /* HomeCodeEntryFontConfigurationView.swift in Sources */,
 				D8A788F71C1D00BD00044364 /* Protocols.swift in Sources */,
 				D8A788F01C1CFA0000044364 /* HomeCodeView.swift in Sources */,
 				D8A788EE1C1CF95600044364 /* PlayColors.swift in Sources */,
