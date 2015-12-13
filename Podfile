@@ -4,6 +4,7 @@ use_frameworks!
 target 'Play' do
 
 pod 'Socket.IO-Client-Swift'
+pod 'SnapKit'
 
 end
 

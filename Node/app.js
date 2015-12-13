@@ -26,6 +26,10 @@ io.on('connection', function (socket) {
 		var fileName = "code.swift";
 		code.to(fileName);
 		shell.chmod("+x", fileName);
-		shell.exec("./" + fileName); // get data with callback?
+		shell.exec("./" + fileName, function(code, output) {
+			// console.log('Exit code:', code);
+			socket.emit('response', {response: output});
+			// console.log('Program output:', output);
+		}); // get data with callback?
 	});
 });
