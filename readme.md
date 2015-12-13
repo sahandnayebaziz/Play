@@ -13,6 +13,8 @@ Play lets you write and run Swift code from your iPad. A small Node.js app runs 
 
 ## What's in the box?
 
+![Play](https://www.dropbox.com/s/9j7hdom6kfkx7a8/play.gif?dl=1)
+
 - 1 iPad app
 - 1 Node.js app
 
