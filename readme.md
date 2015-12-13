@@ -8,7 +8,7 @@ Play lets you write and run Swift code from your iPad. A small Node.js app runs 
 
 ## What you need
 
-- An iPad with iOS 9.0+
+- An iPad with iOS 9.0+ and an external keyboard
 - A Mac with OS X 10.10+, Xcode 7.1+, and Node.js
 
 ## What's in the box?
@@ -32,7 +32,7 @@ More information about Node.js can be found [here](https://nodejs.org/en/).
 
 ### Node packages
 
-Play uses two node packages, [sockets.io](https://github.com/socketio/socket.io) and [shell.js](https://github.com/shelljs/shelljs). Both packages can be installed with [npm](https://www.npmjs.com) using the following commands:
+Play uses two node packages, [socket.io](https://github.com/socketio/socket.io) and [shell.js](https://github.com/shelljs/shelljs). Both packages can be installed with [npm](https://www.npmjs.com) using the following commands:
 ```
 npm install socket.io
 npm install shelljs
@@ -51,7 +51,7 @@ The socket will then open on port `1993` and should be ready to receive Swift co
 
 ### Configuring the client
 
-In `PSocket.swift`, enter the wireless IP address of your Mac in following line:
+In `PSocket.swift`, replace the IP address with the wireless IP address of your Mac in the following line:
 
 ```swift
 private let socket = SocketIOClient(socketURL: "http://10.0.1.50:1993", options: [])
@@ -64,6 +64,11 @@ This IP address can be found by going to the Network tab of System Preferences.
 To run code from the iPad app, open the app on an iPad connected to the same Wifi network. Press `⌘ + R` to run.
 
 The included `index.html` file has a javascript function `sendCode(testCode)` that you can use to easily send Swift code to the server for testing. `sendCode` takes one String of code and will cause the code's output to display in the Terminal window running the Node server. 
+
+## What's coming up?
+
+- Removing the physical keyboard requirement
+- Saving snippets
 
 ## Credits
 
