@@ -1,3 +1,11 @@
+//
+//  app.js
+//  Play
+//
+//  Created by Sahand Nayebaziz on 12/12/15.
+// 
+
+
 var app = require('http').createServer(handler)
 var io = require('socket.io')(app);
 var fs = require('fs');
@@ -27,9 +35,7 @@ io.on('connection', function (socket) {
 		code.to(fileName);
 		shell.chmod("+x", fileName);
 		shell.exec("./" + fileName, function(code, output) {
-			// console.log('Exit code:', code);
 			socket.emit('response', {response: output});
-			// console.log('Program output:', output);
-		}); // get data with callback?
+		});
 	});
 });

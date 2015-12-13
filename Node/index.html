@@ -1,3 +1,11 @@
+<!--
+//  Index.html
+//  Play
+//
+//  Created by Sahand Nayebaziz on 12/12/15.
+// 
+-->
+
 <script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
 <script>
   socket = io('http://localhost:1993');
@@ -5,7 +13,7 @@
   	console.log(data);
   });
 
-  sendMessage = function() {
-  	socket.emit("message", {date: Date().toString()})
+  sendCode = function(testCode) {
+  	socket.emit("message", {code: testCode})
   }
 </script>
