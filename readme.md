@@ -4,7 +4,7 @@ Play is an iPad client for the OS X Swift REPL.
 
 ## Overview
 
-Play lets you write and run Swift code from your iPad. A small Node.js app runs on your Mac and opens up a single socket over which the iPad app and the your Mac can exchange Swift code and code output. The Node side simply creates a Swift file, executes the file using `swift` in Terminal, and sends the output back to the iPad app.
+Play lets you write and run Swift code from your iPad. A small Node.js app runs on your Mac and opens up a single socket over which the iPad app and your Mac can exchange Swift code and code output. The Node side simply creates a Swift file, executes the file using `swift` in Terminal, and sends the output back to the iPad app.
 
 ## What you need
 
