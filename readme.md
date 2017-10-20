@@ -1,3 +1,6 @@
+# DEPRECATED. Swift Playgrounds is an incredible app that is a joy to use. Download it from Apple here: https://www.apple.com/swift/playgrounds/
+
+
 ![Hello world. Love, iPad.](http://dropbox.com/s/0z2hgfx4po1cegx/hello-world-love-ipad.png?dl=1)
 
 Play is an iPad client for the OS X Swift REPL.
