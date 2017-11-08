@@ -1,7 +1,7 @@
 # DEPRECATED. Swift Playgrounds is an incredible app that is a joy to use. Download it from Apple here: https://www.apple.com/swift/playgrounds/
 
 
-![Hello world. Love, iPad.](http://dropbox.com/s/0z2hgfx4po1cegx/hello-world-love-ipad.png?dl=1)
+![Hello world. Love, iPad.](hello-world-love-ipad.png)
 
 Play is an iPad client for the OS X Swift REPL.
 
@@ -16,7 +16,7 @@ Play lets you write and run Swift code from your iPad. A small Node.js app runs 
 
 ## What's in the box?
 
-![Play](https://www.dropbox.com/s/9j7hdom6kfkx7a8/play.gif?dl=1)
+![Play](play.gif)
 
 - 1 iPad app
 - 1 Node.js app
